@@ -1,0 +1,6 @@
+{
+  "name": "ASSUMPTA — Solemnity of the Assumption of Our Lady",
+  "description": "Reverent, minimal, luminous Marian-blue liturgical interface for St. Mary's Parish Mass on the Solemnity of the Assumption of the Blessed Virgin Mary.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

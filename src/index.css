@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --marian-navy: #0B2C6B;
+  --marian-blue: #1E4FA0;
+  --marian-sky: #A9C6E8;
+  --marian-gold: #C9A227;
+  --paper-white: #FFFFFF;
+  --ink-gray: #5B6B85;
+
+  /* Fluid Size System */
+  --pad-x: clamp(16px, 4vw, 48px);
+  --pad-y: clamp(16px, 3vw, 40px);
+  --header-pt: clamp(16px, 2.5vw, 32px);
+  --gap-nav: clamp(16px, 3vw, 36px);
+  --logo: clamp(18px, 2.2vw, 28px);
+  --logo-deg: clamp(12px, 1.4vw, 18px);
+  --nav: clamp(11px, 1.1vw, 14px);
+  --headline: clamp(34px, 6.5vw, 84px);
+  --body: clamp(14px, 1.3vw, 18px);
+  --micro: clamp(10px, 0.9vw, 12px);
+  --btn-px: clamp(16px, 2vw, 28px);
+  --btn-py: clamp(10px, 1.2vw, 14px);
+  --btn-gap: clamp(6px, 0.8vw, 10px);
+  --feature-pad: clamp(14px, 1.8vw, 24px);
+  --feature-min: clamp(200px, 22vw, 320px);
+  --emblem: clamp(36px, 4vw, 54px);
+  --stars-w: clamp(54px, 6vw, 84px);
+  --stars-h: clamp(24px, 2.8vw, 38px);
+  --corner: clamp(10px, 1.2vw, 14px);
+  --icon: clamp(16px, 1.6vw, 22px);
+  --drawer-pad: clamp(20px, 3vw, 40px);
+  --drawer-max: clamp(340px, 35vw, 480px);
+  --section-gap: clamp(12px, 2vw, 24px);
+  --main-py: clamp(20px, 4vw, 48px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-garamond {
+  font-family: 'Cormorant Garamond', 'EB Garamond', serif;
+}
+
+.font-eb-garamond {
+  font-family: 'EB Garamond', serif;
+}
+
+.font-marcellus {
+  font-family: 'Marcellus', serif;
+}
+
+@keyframes marianCrossfade {
+  0%, 100% {
+    opacity: 0;
+  }
+  45%, 55% {
+    opacity: 1;
+  }
+}
+
+.animate-marian-crossfade {
+  animation: marianCrossfade 8s ease-in-out infinite;
+  will-change: opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marian-crossfade {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(169, 198, 232, 0.15);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(11, 44, 107, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(11, 44, 107, 0.5);
+}
+
