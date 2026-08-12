@@ -1,7 +1,11 @@
-import React from 'react';
-import { ArrowUpRight, Calendar, Clock, MapPin } from 'lucide-react';
-import { CornerBracket, TwelveStarsCrown, MonstranceStarEmblem } from './CustomIcons';
-import { BG_IMAGE_1, BG_IMAGE_2 } from './ImageRevealBackground';
+import React from "react";
+import { ArrowUpRight, Calendar, Clock, MapPin } from "lucide-react";
+import {
+  CornerBracket,
+  TwelveStarsCrown,
+  MonstranceStarEmblem,
+} from "./CustomIcons";
+import { BG_IMAGE_1, BG_IMAGE_2 } from "./ImageRevealBackground";
 
 interface HeroContentProps {
   onJoinMass: () => void;
@@ -17,8 +21,8 @@ export const HeroContent: React.FC<HeroContentProps> = ({
       id="hero-liturgical-main"
       className="relative z-10 flex-1 flex flex-col justify-between"
       style={{
-        paddingInline: 'var(--pad-x)',
-        paddingBlock: 'var(--main-py)',
+        paddingInline: "var(--pad-x)",
+        paddingBlock: "var(--main-py)",
       }}
     >
       {/* Mobile/Tablet Sacred Artwork Display (visible below lg) */}
@@ -76,21 +80,18 @@ export const HeroContent: React.FC<HeroContentProps> = ({
 
           {/* Inscription Headline */}
           <h1 className="font-cinzel font-extrabold uppercase text-[#0B2C6B] tracking-[0.06em] leading-[1.08] select-none">
-            <span
-              className="block"
-              style={{ fontSize: 'var(--headline)' }}
-            >
+            <span className="block" style={{ fontSize: "var(--headline)" }}>
               ASSUMPTA
             </span>
             <span
               className="block text-[#0B2C6B]/90"
-              style={{ fontSize: 'var(--headline)' }}
+              style={{ fontSize: "var(--headline)" }}
             >
               EST MARIA
             </span>
             <span
               className="flex items-center flex-wrap gap-x-3 text-[#1E4FA0]"
-              style={{ fontSize: 'var(--headline)' }}
+              style={{ fontSize: "var(--headline)" }}
             >
               <span>IN CAELUM</span>
               <TwelveStarsCrown className="inline-block" />
@@ -100,9 +101,10 @@ export const HeroContent: React.FC<HeroContentProps> = ({
           {/* Subtitle in Cormorant Garamond Italic */}
           <p
             className="font-garamond italic text-[#5B6B85] mt-3 sm:mt-4 tracking-wide max-w-xl"
-            style={{ fontSize: 'var(--body)' }}
+            style={{ fontSize: "var(--body)" }}
           >
-            Solemnity of the Assumption of the Blessed Virgin Mary &bull; Holy Day of Obligation
+            Solemnity of the Assumption of the Blessed Virgin Mary &bull; Holy
+            Day of Obligation
           </p>
 
           {/* Liturgical Date & Parish Indicator */}
@@ -114,12 +116,12 @@ export const HeroContent: React.FC<HeroContentProps> = ({
             <span className="text-[#A9C6E8]">&bull;</span>
             <span className="inline-flex items-center gap-1.5">
               <Clock className="w-3.5 h-3.5 text-[#C9A227]" />
-              8:00 AM, 10:30 AM (Solemn High Mass), 6:00 PM
+              6:00 PM (Solemn High Mass)
             </span>
             <span className="text-[#A9C6E8]">&bull;</span>
             <span className="inline-flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-[#C9A227]" />
-              St. Mary&apos;s Parish Sanctuary
+              St. Mary&apos;s Cathedral Parish
             </span>
           </div>
 
@@ -135,17 +137,17 @@ export const HeroContent: React.FC<HeroContentProps> = ({
               onClick={onJoinMass}
               className="group inline-flex items-center justify-center font-garamond font-medium uppercase tracking-[0.18em] border border-[#5B6B85] rounded-md transition-all duration-200 cursor-pointer min-h-11 hover:bg-[#0B2C6B] hover:text-white hover:border-[#0B2C6B] text-[#0B2C6B] active:scale-[0.99] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1E4FA0]"
               style={{
-                fontSize: 'var(--body)',
-                paddingInline: 'var(--btn-px)',
-                paddingBlock: 'var(--btn-py)',
-                gap: 'var(--btn-gap)',
+                fontSize: "var(--body)",
+                paddingInline: "var(--btn-px)",
+                paddingBlock: "var(--btn-py)",
+                gap: "var(--btn-gap)",
               }}
               aria-label="Join the Mass — RSVP and Prepare Mass Booklet"
             >
               <span>JOIN THE MASS</span>
               <ArrowUpRight
                 className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                style={{ width: 'var(--icon)', height: 'var(--icon)' }}
+                style={{ width: "var(--icon)", height: "var(--icon)" }}
               />
             </button>
 
@@ -153,7 +155,7 @@ export const HeroContent: React.FC<HeroContentProps> = ({
               id="cta-view-propers"
               onClick={onOpenOrderOfMass}
               className="inline-flex items-center justify-center font-garamond italic tracking-wider text-[#1E4FA0] hover:text-[#0B2C6B] hover:underline underline-offset-4 px-3 py-2 min-h-11 cursor-pointer transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1E4FA0]"
-              style={{ fontSize: 'var(--body)' }}
+              style={{ fontSize: "var(--body)" }}
             >
               View Order of Mass &amp; Propers &rarr;
             </button>
@@ -168,8 +170,8 @@ export const HeroContent: React.FC<HeroContentProps> = ({
           <div
             className="relative flex flex-col items-start bg-white/70 backdrop-blur-xs transition-all duration-300 hover:bg-white/90"
             style={{
-              padding: 'var(--feature-pad)',
-              minWidth: 'var(--feature-min)',
+              padding: "var(--feature-pad)",
+              minWidth: "var(--feature-min)",
             }}
           >
             {/* Absolute 4 Corner Brackets (no filled card background) */}
@@ -194,7 +196,7 @@ export const HeroContent: React.FC<HeroContentProps> = ({
             {/* Taglines in Cormorant Garamond semibold italic uppercase */}
             <div
               className="font-garamond font-semibold italic uppercase text-[#0B2C6B] tracking-[0.14em] leading-[1.35]"
-              style={{ fontSize: 'var(--body)' }}
+              style={{ fontSize: "var(--body)" }}
             >
               <div className="text-[#0B2C6B]">QUEEN OF HEAVEN.</div>
               <div className="text-[#1E4FA0]">MOTHER OF THE CHURCH.</div>
