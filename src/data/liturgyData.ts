@@ -96,10 +96,9 @@ export const HYMNS_LIST: HymnItem[] = [
       "Gentle woman, quiet light, Morning star, so strong and bright.  Gentle Mother, peaceful dove, Teach us wisdom; teach us love.",
     moment: "COLLECTION",
     stanzas: [
-      "Hail Mary, full of grace, The Lord is with you.  Blessed are you among women And blest is the fruit of your womb, Jesus.",
-      "Holy Mary, Mother of God, Pray for us sinners now And at the hour of death.  Amen.",
-      "You were chosen by the Father; You were chosen for the Son.  You were chosen from all women And for woman, shining one.",
-      "Blessed are you among women, Blest in turn all women, too.  Blessed they with peaceful spirits.",
+      "Hail Mary, full of grace, The Lord is with you.  Blessed are you among women And blest is the fruit of your womb, Jesus.\nHoly Mary, Mother of God, Pray for us sinners now And at the hour of death.  Amen.\n(Refrain)",
+      "You were chosen by the Father; You were chosen for the Son.  You were chosen from all women And for woman, shining one.\n(Refrain)",
+      "Blessed are you among women, Blest in turn all women, too.  Blessed they with peaceful spirits.\n(Refrain)",
     ], // copyrighted (Carey Landry / OCP) — requires OneLicense.net/CCLI text
   },
   {
